@@ -8,7 +8,7 @@ clean:
 unit-test:
 	flutter test test/models/favorites_test.dart --reporter=expanded
 
-# Runs all Widget tests from 'home_test.dart' in headless mode
+# Runs all Widget tests from 'home_test.dart' in HEADLESS mode
 widget-home:
 	flutter test test/home_test.dart --reporter=expanded
 
@@ -16,7 +16,7 @@ widget-home:
 widget-home-emu:
 	flutter run test/home_test.dart 
 
-# Runs all Widget tests from 'favorites_test.dart' in headless mode
+# Runs all Widget tests from 'favorites_test.dart' in HEADLESS mode
 widget-favorites:
 	flutter test test/favorites_test.dart --reporter=expanded
 
@@ -25,11 +25,11 @@ widget-favorites-emu:
 	flutter run test/favorites_test.dart 
 
 # Runs all Integration tests from 'app_test.dart' on Emulator/Simulator or Real Device
-int_test:
+int-test:
 	flutter test integration_test/app_test.dart --reporter=expanded
 
 # Runs Scroll Performance test from 'perf_test.dart' on Emulator/Simulator or Real Device
-perf_scroll:
+perf-scroll:
 	flutter drive \
  		--driver=test_driver/perf_driver.dart \
   		--target=integration_test/perf_test.dart \
